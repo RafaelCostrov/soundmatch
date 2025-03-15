@@ -43,7 +43,7 @@ public class Artista {
 
     @Override
     public String toString() {
-        return "Artista:" +
+        return "Artista: " +
                 "Codigo: " + id +
                 ", Nome: " + nome +
                 ", popularidade: " + popularidade +

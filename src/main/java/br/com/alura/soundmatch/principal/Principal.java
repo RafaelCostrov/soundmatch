@@ -48,7 +48,7 @@ public class Principal {
 
     public void menu() {
         String escolha = "";
-        while (!escolha.equals("9")) {
+        while (!escolha.equals("0")) {
             String menu = """
                     *******************************************************************
                     Bem vindo ao SoundMatch, 
@@ -173,14 +173,9 @@ public class Principal {
         Long artista = null;
         while (!entradaValida) {
             try {
-                if (scanner.hasNextLong()) {
                     artista = scanner.nextLong();
-                    scanner.nextLine();
                     entradaValida = true;
-                } else {
-                    System.out.println("Entrada invalida! Escolha um codigo valido: ");
-                    listarArtistas();
-                }
+
             } catch (InputMismatchException e) {
                 System.out.println("Entrada invalida! Escolha um codigo valido: ");
                 listarArtistas();
